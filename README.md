@@ -1,0 +1,2 @@
+# galadarbs-majaslapa
+Majaslapa
