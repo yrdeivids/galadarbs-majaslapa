@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+    </style>
+
+</head>
+<body>
+
+ <input type="number" id="num1" placeholder="Pirmais skaitlis">
+ <input type="number" id="num2" placeholder="Otrais skaitlis">
+ <button class="poga" onclick="addNumbers()">Saskaitīt</button>
+ <button class="poga" onclick="subtractNumbers()">Atņemt</button>
+ <button class="poga" onclick="subtractNumbers()">Sareizināt</button>
+ <button class="poga" onclick="subtractNumbers()">Dalīt</button>
+
+ <script>
+    function addNumbers() {
+        const num1 = parsefloat(document.getElementById("num1".value));
+        const num2 = parsefloat(document.getElementById("num2".value));
+        document.getElementbyId("result").textcontent = num1 + num2;
+    }
+    function subtractNumbers() {
+        const num1 = parsefloat(document.getElementById("num1".value));
+        const num2 = parsefloat(document.getElementById("num2".value));
+        document.getElementbyId("result").textcontent = num1 - num2;
+    }
+ </script>
+<br>
+<br>
+<p>Rezultāts: <span id="result"></span></p>
+</body>
+</html>

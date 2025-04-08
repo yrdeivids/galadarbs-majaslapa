@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="lapa.css">
+</head>
+<body 
+style="background-color: rgb(78, 161, 230);">
+<style>
+  body {
+          font-family: Arial, Helvetica, sans-serif;
+          color: rgb(255, 255, 255);
+        }
+</style>
+<h2 style="text-align: center; font-size:  300%;">Viktorīna</h2>
+
+
+    <div id="container">
+        <nav>
+            <ul>
+                <li><a href="cod.html">Home</a></li>
+                <li><a href="Opcijas.html">Opcijas</a>
+                  <ul>
+                   <li><a href="lapa.html">Fona krāsa</a></li>
+                    <li><a href="eskperi1.html">Eksperiments 1</a></li>
+                    <li><a href="eksperits2.html">Eksperiments 2</a></li>
+            </ul>   
+      
+                </li>
+                <li><a href="Galerija.html">Rekvizīti</a>
+                <ul>
+                    <li><a href="bildesgalerija.html">Bildes</a></li>
+                    <li><a href="#">Svētku kartiņas</a>             
+                       <ul>
+                      <li><a href="snigasniegaputinaja.html">Ziemassvētku kartiņa</a></li>
+                    </ul> </li>
+                    <li><a href="#">Spēles</a>
+                    <ul>
+                        <li><a href="uzminiskaitli.html">Uzmini skaitli</a></li>
+                        <li><a href="akmensskerespapirits.html">Akmens, Šķēres, Papīrīts</a></li>
+                        <li><a href="cfg.html">Viktorīna</a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+      
+                
+                <li><a href="kopsavilums.html">Kopsavilkums</a></li>
+                <li><a href="Jaunumi.html">Jaunumi</a></li>
+
+                
+        <button onclick="setBgGreen()">Zaļš</button>
+        <button onclick="setBgPurple()">Violets</button>
+        <button onclick="setBgWhite()">Gaišs</button>
+        <button onclick="setBgBlack()">Tumšs</button>
+        <button onclick="setBgBlue()">Zils</button>
+      
+
+      
+                <li><a href="registreties.html">Reģistrēties</a></li>
+                <li><a href="jaunskonts.html">Jauns konts</a></li>
+      
+            </ul>
+        </nav>
+</div>      
+
+    <h2>Jautājums 1.</h2>
+    <p>Cik smilts gabaliņi ir jūrmalā?</p>
+
+<input type="text" id="answer">
+<button onclick="checkAnswer()">Pārbaudīt</button>
+<p id="feedback"></p>
+
+
+<h2>Jautājums 2.</h2>
+<p>Cik zāle ir skolas pagalmā?</p>
+
+<input type="text" id="answers">
+<button onclick="checkAnswers()">Pārbaudīt</button>
+<p id="feedbacks"></p>
+
+
+<h2>Jautājums 3.</h2>
+<p>Cik koki ir mežā?</p>
+
+<input type="text" id="answerz">
+<button onclick="checkAnswerz()">Pārbaudīt</button>
+<p id="feedbackz"></p>
+
+
+<h2>Jautājums 4.</h2>
+<p>Cik mākoņi debesīs?</p>
+
+<input type="text" id="answera">
+<button onclick="checkAnswera()">Pārbaudīt</button>
+<p id="feedbacka"></p>
+
+
+
+ <script>
+
+function checkAnswer() {
+    var answer = document.getElementById("answer").value;
+    var feedback = document.getElementById("feedback");
+    if (answer.toLowerCase() === "Vairāk nekā mana pacietība") {
+        feedback.innerHTML = "Pareizi!";
+    } else {
+        feedback.innerHTML = "Nepareizi, atbilde ir: Vairāk nekā mana pacietība."
+    }
+}
+
+function checkAnswers() {
+    var answer = document.getElementById("answers").value;
+    var feedback = document.getElementById("feedbacks");
+    if (answer.toLowerCase() === "Vairāk nekā mana enerģija") {
+        feedback.innerHTML = "Pareizi!";
+    } else {
+        feedback.innerHTML = "Nepareizi, atbilde ir: Vairāk nekā mana enerģija."
+    }
+}
+
+function checkAnswerz() {
+    var answer = document.getElementById("answerz").value;
+    var feedback = document.getElementById("feedbackz");
+    if (answer.toLowerCase() === "Vairāk nekā man interesē datorika") {
+        feedback.innerHTML = "Pareizi!";
+    } else {
+        feedback.innerHTML = "Nepareizi, atbilde ir: Vairāk nekā man interesē datorika."
+    }
+}
+
+function checkAnswera() {
+    var answer = document.getElementById("answera").value;
+    var feedback = document.getElementById("feedbacka");
+    if (answer.toLowerCase() === "Mazāk nekā mana griba iet mājās") {
+        feedback.innerHTML = "Pareizi!";
+    } else {
+        feedback.innerHTML = "Nepareizi, atbilde ir: Mazāk nekā mana griba iet mājās."
+    }
+}
+
+ </script>
+
+</body>
+</html>

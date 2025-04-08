@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lapa.css">
+</head>
+<body
+style="background-color: rgb(78, 161, 230);">
+<style>
+  body {
+          font-family: Arial, Helvetica, sans-serif;
+          color: rgb(255, 255, 255);
+        }
+</style>
+
+<h2 style="text-align: center; font-size:  300%;">Izveidot jaunu kontu</h2>
+
+<div id="container">
+  <nav>
+      <ul>
+          <li><a href="cod.html">Home</a></li>
+          <li><a href="Opcijas.html">Opcijas</a>
+            <ul>
+             <li><a href="lapa.html">Fona krāsa</a></li>
+              <li><a href="eskperi1.html">Eksperiments 1</a></li>
+              <li><a href="eksperits2.html">Eksperiments 2</a></li>
+      </ul>   
+
+          </li>
+          <li><a href="Galerija.html">Rekvizīti</a>
+          <ul>
+              <li><a href="bildesgalerija.html">Bildes</a></li>
+              <li><a href="#">Svētku kartiņas</a>             
+                 <ul>
+                <li><a href="snigasniegaputinaja.html">Ziemassvētku kartiņa</a></li>
+              </ul> </li>
+              <li><a href="#">Spēles</a>
+              <ul>
+                  <li><a href="uzminiskaitli.html">Uzmini skaitli</a></li>
+                  <li><a href="akmensskerespapirits.html">Akmens, Šķēres, Papīrīts</a></li>
+                  <li><a href="cfg.html">Viktorīna</a>
+                  </li>
+              </ul>
+              </li>
+          </ul>
+          </li>
+
+          
+          <li><a href="kopsavilums.html">Kopsavilkums</a></li>
+          <li><a href="Jaunumi.html">Jaunumi</a></li>
+
+          
+  <button onclick="setBgGreen()">Zaļš</button>
+  <button onclick="setBgPurple()">Violets</button>
+  <button onclick="setBgWhite()">Gaišs</button>
+  <button onclick="setBgBlack()">Tumšs</button>
+  <button onclick="setBgBlue()">Zils</button>
+  
+
+          <li><a href="registreties.html">Reģistrēties</a></li>
+          <li><a href="jaunskonts.html">Jauns konts</a></li>
+
+      </ul>
+  </nav>
+</div>
+
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: black;
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Add padding to containers */
+        .container {
+          padding: 16px;
+          background-color: rgb(169, 221, 127);
+        }
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 15px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: rgb(210, 235, 182);
+        }
+        
+        input[type=text]:focus, input[type=password]:focus {
+          background-color: #ddd;
+          outline: none;
+        }
+        
+        /* Overwrite default styles of hr */
+        hr {
+          border: 1px solid #f1f1f1;
+          margin-bottom: 25px;
+        }
+        
+        /* Set a style for the submit button */
+        .registerbtn {
+          background-color: rgb(196, 216, 174);
+          color: rgb(161, 192, 125);
+          padding: 16px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+          opacity: 0.9;
+        }
+        
+        .registerbtn:hover {
+          opacity: 1;
+        }
+        
+        /* Add a blue text color to links */
+        a {
+          color: rgb(124, 184, 89);
+        }
+        
+        /* Set a grey background color and center the text of the "sign in" section */
+        .signin {
+          background-color: rgb(240, 235, 230)3;
+          text-align: center;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <form action="/action_page.php">
+          <div class="container">
+            <h1>Izveidot kontu</h1>
+            <p>Izpildiet formu lai izveidotu kontu</p>
+            <hr>
+        
+            <label for="email"><b>E-pasts</b></label>
+            <input type="text" placeholder="Ievadiet E-pastu" name="email" id="email" required>
+        
+            <label for="psw"><b>Parole</b></label>
+            <input type="password" placeholder="Ievadiet paroli" name="psw" id="psw" required>
+        
+            <label for="psw-repeat"><b>Atkārtoti ievadīt paroli</b></label>
+            <input type="password" placeholder="Ievadiet paroli atkārtoti" name="psw-repeat" id="psw-repeat" required>
+            <hr>
+            <p>Izveidojot kontu jūs piekrītat mūsu <a href="#">Privātuma politikai</a>.</p>
+        
+            <button type="submit" class="registerbtn">Izveidot kontu</button>
+          </div>
+          
+          <div class="container signin">
+            <p>Jau ir konts? <a href="#">Ieiet</a>.</p>
+          </div>
+        </form>
+        
+        <button onclick="btnGreen()">Green</button>
+
+        <script>
+          function btnGreen() {
+            document.getElementById("container").style.backroundColor="#798645";
+          }
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+/* General Styles */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+/* Background Image */
+.background {
+    background-image: url("a52b146bc3921ade672a032f87de5cd3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* Heading Style */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+/* Button Styles */
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 70px;
+    background-color: rgba(173, 216, 230, 0.5); /* Light blue transparent */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Add Icons inside Buttons */
+button::before {
+    content: "";
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Different Images for Each Button */
+button:nth-child(2)::before {
+    background-image: url("cd-icon.png"); /* Replace with actual CD image */
+}
+
+button:nth-child(3)::before {
+    background-image: url("vinyl-icon.png"); /* Replace with actual Vinyl image */
+}
+
+button:nth-child(4)::before {
+    background-image: url("cassette-icon.png"); /* Replace with actual Cassette image */
+}
+
+.background {
+    background-image: url("a52b146bc3921ade672a032f87de5cd3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; /* Ensures the whole image is visible */
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black; /* Optional: Fills any empty space around the image */
+}

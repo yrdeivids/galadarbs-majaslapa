@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .calculator {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        input[type="number"] {
+            width: 80px;
+            padding: 5px;
+            margin: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 15px;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Simple Calculator</h1>
+        <input type="number" id="num1" placeholder="First number">
+        <input type="number" id="num2" placeholder="Second number">
+        <br>
+        <button onclick="calculate('+')">Add (+)</button>
+        <button onclick="calculate('-')">Subtract (-)</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        function calculate(operation) {
+            const num1 = parseFloat(document.getElementById('num1').value);
+            const num2 = parseFloat(document.getElementById('num2').value);
+
+            if (isNaN(num1) || isNaN(num2)) {
+                document.getElementById('result').innerText = 'Please enter valid numbers';
+                return;
+            }
+
+            let result;
+            if (operation === '+') {
+                result = num1 + num2;
+            } else if (operation === '-') {
+                result = num1 - num2;
+            }
+
+            document.getElementById('result').innerText = `Result: ${result}`;
+        }
+    </script>
+</body>
+</html>
+
+<ul> <!--Izveido sarakstu-->
+
+
+    <li> <!--Pirmā saraksta daļa-->
+        <input type="checkbox" id="uzd1" name="uzd1" value="darbibas">
+        <label for="uzd1">Darbs 1</label>
+    
+        <!--Izdzēšanas poga-->
+        <button class="poga" onclick="deletetask()">Dzēst</button>
+    </li>
+    
+    <li> <!--Otrā saraksta daļa-->
+        <input type="checkbox" id="darbiba2" name="darbiba2" value="darbiba">
+        <label for="darbiba2">Darbs 2</label>
+        <button class="poga" onclick="deletestasks()">Dzēst</button>
+    </li>
+    
+    <li> <!--Treša saraksta daļa-->
+        <input type="checkbox" id="darbiba3" name="darbiba3" value="darbiba">
+        <label for="darbiba3">Darbs 3</label>
+        <button class="poga" onclick="deletestasks()">Dzēst</button>
+    </li>
+    
+    <li> <!--Ceturtā saraksta daļa-->
+        <input type="checkbox" id="darbiba4" name="darbiba4" value="darbiba">
+        <label for="darbiba4">Darbs 4</label>
+        <button class="poga" onclick="deletestasks()">Dzēst</button>
+    </li>
+    
+    <li> <!--Piektā saraksta daļa-->
+        <input type="checkbox" id="darbiba5" name="darbiba5" value="darbiba">
+        <label for="darbiba5">Darbs 5</label>
+        <button class="poga" onclick="deletestasks()">Dzēst</button>
+    </li>
+    
+    </ul>
